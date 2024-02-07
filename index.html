@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;600&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand:wght@100;600&family=Shrikhand:wght@400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0375098d7a.js" crossorigin="anonymous"></script>
+        <title>Ohmyfood!</title>
+    </head>
+    <body>
+        <header class="header index-load">
+                <a href="index.html"><img class="header__logo" src="images/logo/ohmyfood.png" alt="logo ohmyfood"></a>
+        </header>
+        <main class="main index-load">
+            <div class="sect-and-aside">
+                <section class="research">
+                    <div class="research__location">
+                        <i class="fa-solid fa-location-dot research__location__icon" id="research-icon"></i>
+                        <address class="research__location__text">Paris, Belleville</address>
+                    </div>
+                    <div class="research__explorer">
+                        <h1 class="research__explorer__title">Réservez le menu qui vous convient</h1>
+                        <p class="research__explorer__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                        <form id="explorer-btn-container" action="#restaurants">
+                            <button class="research__explorer__btn all-btn" >Explorer nos restaurants</button>
+                        </form>
+                    </div>
+                </section>
+
+                <section class="working">
+                    <h2 class="working__title">Fonctionnement</h2>
+                    <ol class="working__box">
+                        <li class="working__box__li"><span>1</span><i class="fa-solid fa-mobile-screen-button"></i>
+                        Choisissez un restaurant</li>
+                        <li class="working__box__li"><span>2</span><i class="fa-solid fa-list"></i>
+                        Composez votre menu</li>
+                        <li class="working__box__li"><span>3</span><i class="fa-solid fa-store"></i>
+                        Dégustez au restaurant</li>
+                    </ol>
+                </section>
+            </div>
+
+            <section class="main-box">
+                <h2 class="main-box__title" id="restaurants">Restaurants</h2>
+                <div class="main-box__sub-box">
+
+                    <article class="main-card">
+                        
+                        <a href="lapalettedugout.html"><img class="main-card__img" src="images/restaurants/menilmontant.jpg" alt="photographie d'un plat la palette du goût"></a>
+                        
+                        <div class="main-card__box">
+                            <div class="main-card__text-box">
+                                <h3 class="main-card__title">La palette du goût</h3>
+                                <h4 class="main-card__title-2">Ménilmontant</h4>
+                            </div>
+                            <i class="main-card__box__like fa-regular fa-heart fa-lg heart-like"></i>
+                        </div>
+
+                        <p class="main-card__new">Nouveau</p>
+
+                    </article>
+
+                    <article class="main-card">
+                        <a href="lanoteenchantee.html"><img class="main-card__img" src="images/restaurants/charonne.jpg" alt="photographie d'un plat de la note enchantée"></a>
+                        <div class="main-card__box">
+                            <div class="main-card__text-box">
+                                <h3 class="main-card__title">La note enchantée</h3>
+                                <h4 class="main-card__title-2">Charonne</h4>
+                            </div>
+                            <i class="main-card__box__like fa-regular fa-heart fa-lg heart-like"></i>
+                        </div>
+
+                        <p class="main-card__new">Nouveau</p>
+                    </article>
+
+                    <article class="main-card">
+                        <a href="alafrancaise.html"><img class="main-card__img" src="images/restaurants/cité-rouge.jpg" alt="photographie d'un plat de à la française"/></a>
+                        <div class="main-card__box">
+                            <div class="main-card__text-box">
+                                <h3 class="main-card__title">À la française</h3>
+                                <h4 class="main-card__title-2">Cité Rouge</h4>
+                            </div>
+                            <i class="main-card__box__like fa-regular fa-heart fa-lg heart-like"></i>
+                        </div>
+
+                    </article>
+
+                    <article class="main-card">
+                        <a href="ledelicedessens.html"><img class="main-card__img" src="images/restaurants/folie-méricourt.jpg" alt="photographie d'un plat de le délice des sens"></a>
+                        <div class="main-card__box">
+                            <div class="main-card__text-box">
+                                <h3 class="main-card__title">Le délice des sens</h3>
+                                <h4 class="main-card__title-2">Folie-Méricourt</h4>
+                            </div>
+                            <i class="main-card__box__like fa-regular fa-heart fa-lg heart-like"></i>
+                        </div>
+
+                    </article>
+                    
+                </div>
+            </section>
+        </main>
+        <footer class="footer index-load">
+            <h2 class="footer__title">ohmyfood</h2>
+            <ul class="footer__ul">
+                <li class="footer__li"><a href="#"><i class="footer__icon fa-solid fa-utensils fa-sm"></i>Proposer un restaurant</a></li>
+                <li class="footer__li"><a href="#"><i class="footer__icon fa-solid fa-handshake-angle fa-xs"></i>Devenir partenaire</a></li>
+                <li class="footer__li"><a href="#">Mentions légales</a></li>
+                <li class="footer__li"><a href="mailto:ohmyfood@yopmail.fr">Contact</a></li>
+            </ul>
+        </footer>
+        <div class="loader"></div>
+    </body>
+</html>

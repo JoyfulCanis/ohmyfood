@@ -1,0 +1,210 @@
+.header{
+    &__nav{
+        position: absolute;
+        top:22px;
+        left:18px;
+        &__arrow{
+            color: rgb(57, 57, 57);
+            &:hover{
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+.main{
+    overflow: hidden;
+
+    &__img{
+        height:260px;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        z-index: 0;
+        @include desktop-only{
+            border-radius: 16px 16px 0px 0px;
+            object-position: 50% 55%;
+        }
+        
+    }
+}
+.menu-flex{
+    @include desktop-only{
+        @include flex-row;
+        background-color: $color-grey-2;
+        justify-content: space-around;
+    }
+}
+.main-menu{
+    width: 100%;
+    background-color:$color-grey-2;
+    border-radius:30px 30px 0 0;
+    position: relative;
+    z-index: 1;
+    margin-top: -50px;
+    padding-bottom: 60px;
+    @include desktop-only{
+        margin-top: -4px;
+        border-radius: 0px;
+    }
+    @include flex-column;
+    &__box{
+        @include flex-row;
+        justify-content: space-between;
+        padding:30px 40px 30px 18px;
+        &__title{
+            font-family: Shrikhand;
+            font-size: 28px;
+            font-weight: 300;
+        }
+        &__like{
+            transition: font-weight 100ms;
+            cursor: pointer;
+            &:hover{
+                @include heart-like;
+            }
+            
+        }
+    }
+}
+
+.main-menu__box i{
+    line-height: 40px;
+}
+
+.menu{
+    padding:0px 16px 26px 16px;
+    background-color: $color-grey-2;
+    border-radius: 0;
+    @include desktop-only{
+        width: 33%;
+    }
+    &__title{
+        width: 40px;
+        border-bottom: 3px solid $color-tertiary;
+        color:rgba(0, 0, 0, 0.753);
+        font-weight: 400;
+        font-size: 16px;
+        padding-bottom: 4px;
+        text-transform: uppercase;
+    }
+    
+
+    &__box{
+        @include flex-row;
+        background-color:  white;
+        border-radius: 16px;
+        margin-top: 16px;
+        @include sub-shadow;
+        position: relative;
+        overflow: hidden;
+        opacity: 0;
+        height: 68px;
+        @include desktop-only{
+            width: 100%;
+            height: 68px;
+        }
+
+        &__text-and-price{
+            @include flex-row;
+            width:100%;
+            flex-basis: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px;
+            transition: width 600ms;
+            &:hover + .menu__box__check{
+                transform: translateX(0px);
+            }
+            &:hover ~ .menu__box__check-icon{
+                animation: rotate-check 1s ease-in-out infinite;
+                animation-iteration-count: 1;
+                margin-right: 0px;
+            }
+            &:hover > .menu__box__price{
+                padding-right: 50px;
+            }
+
+        }
+        &__price{
+            display: block;
+            color:$color-adress;
+            font-size: 15px;
+            align-self: end;
+            transition: padding 400ms ease-in-out;
+
+        }
+        &__text-box{
+            @include flex-column;
+            width: 70%;
+
+            &__title{
+                font-weight: 550;
+                font-size: 18px;
+                white-space:nowrap;
+                text-overflow:ellipsis;
+                overflow: hidden;
+            }   
+
+            &__text{
+                padding-top: 2px;
+                color: rgba(0, 0, 0, 0.836);
+                font-weight: 400;
+                font-size: 15px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        
+        }
+        &__check{
+            display: flex;
+            background-color: $color-tertiary;
+            height: 100%;
+            width:54px;
+            position: absolute;
+            right:0;
+            border-radius: 0 16px 16px 0px;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(54px);
+            transition: transform 600ms;
+        }
+        &__check-icon{
+            display: block;
+            color:white;
+            display: inline-block;
+            position: absolute;
+            right:100px;
+            right: 18px;
+            top:30px;
+            margin-right: -57px;
+            transition: margin-right 650ms ease-in-out;
+            line-height: 10px;
+
+            
+        }
+        
+        
+        
+    }
+    
+}
+
+.order-btn{
+    font-size: 16px;
+    width: 180px;
+    padding:14px 0 14px 0;
+}
+
+.box-btn{
+    @include flex-row;
+    padding-top: 40px;
+    margin-bottom: 30px;
+    
+}
+
+//check margin + overflow//
+//loader animé//
+//positionnement coeur//
+
